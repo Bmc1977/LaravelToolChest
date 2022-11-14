@@ -116,6 +116,18 @@
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
             </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('tools')">
+                {{ __('Tools') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('categories')">
+                {{ __('Categories') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('groups')">
+                {{ __('Groups') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('brands')">
+                {{ __('Brands') }}
+            </x-responsive-nav-link>
         </div>
 
         <!-- Responsive Settings Options -->
@@ -140,9 +152,6 @@
         </div>
         @else
             <div class="pt-4 pb-1 border-t border-gray-200">
-                <div class="px-4">
-                    <div class="font-medium text-base text-gray-800">Guest</div>
-                </div>
 
                 <div class="mt-3 space-y-1">
                     <!-- Authentication -->
